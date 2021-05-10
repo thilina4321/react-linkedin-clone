@@ -1,0 +1,65 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.title{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(to left, rgb(118, 203, 224), grey );
+
+}
+
+.section p {
+    color: blue;
+    font-weight: bold;
+    margin: 0;
+}
+
+.camera{
+    display: flex;
+    padding: 15px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    height: 50px;
+    background-color: rgb(190, 236, 236);
+    transform: translateY(-30px);
+}
+
+.connection__section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+}
+
+.connection{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10px;
+    
+}
+
+.connection p{
+    flex: 1;
+    color: grey;
+    font-weight: bold;
+    margin: 0;
+}
+
+.connection__section p{
+    margin: 0;
+}

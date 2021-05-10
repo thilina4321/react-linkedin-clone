@@ -1,0 +1,22 @@
+.div{
+    background-color: white;
+    width: 100%;
+    text-align: start;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.div p,h5{
+    margin: 0;
+    width: fit-content;
+}
+
+.div h5{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.div span{
+    color: blue;
+}

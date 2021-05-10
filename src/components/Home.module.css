@@ -1,0 +1,78 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.headbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.headbar h1{
+    text-align: start;
+    color: blue;
+    flex: 1;
+
+}
+
+.headbar h4{
+    margin: 0 10px;
+}
+
+.headbar button{
+    background-color: transparent;
+    padding: 3px 8px;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 20px;
+    color: blue;
+    margin-right: 30px;
+}
+
+.headbar button:hover{
+    background-color: rgba(166, 197, 206, 0.4);
+    font-weight: bold;
+}
+
+/* second secion */
+
+.second{
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.second h1{
+    color: blue;
+    text-align: start;
+}
+
+.second img{
+    height: 400px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media (min-width:700px){
+    .second{
+        margin-top: 100px;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .second h1{
+        flex: 0.5;
+    }
+
+    .second img{
+        flex: 1;
+    }
+}
