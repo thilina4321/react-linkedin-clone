@@ -5,7 +5,7 @@ import Feedback from './components/feedback/Feedback';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
     <BrowserRouter>
       <Switch>

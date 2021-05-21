@@ -1,48 +1,65 @@
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     display: flex;
-    margin: 5px;
     background-color: white;
-    padding: 10px;
+    justify-content: space-around;
     align-items: center;
+    height: 53px;
 
+}
+
+.logoInput{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logoInput img{
+    height: 80%;
+    width: 60px;
+    margin-left: 0;
+
+}
+
+.logoInput input {
+    margin-left: 5px;
+    height: 30px;
+    width: 280px;
 }
 
 .header h1{
     margin: 0;
 }
 
-.header input {
-    flex: 1;
-    margin-left: 5px;
-    height: 30px;
-}
+
 
 .nav{
-    background-color: white;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
 }
 
 .nav p {
-    margin: 0 5px;
+    margin: 0 4px;
+    font-size: 10px;
 }
 
 .element{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 45px;
+    height: 40px;
 }
 
 .user{
     cursor: pointer;
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: black;
 }
@@ -53,12 +70,3 @@
     top: 40%;
 }
 
-@media (min-width:768px){
-    .nav{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: auto;
-    }
-}

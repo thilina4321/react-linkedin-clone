@@ -3,7 +3,7 @@ import Share from "./Share";
 import UserPost from "./UserPost";
 const Main = () => {
   return (
-    <section>
+    <section style={{marginBottom:'10px'}}>
       <Share />
       <UserPost />
     </section>

@@ -1,0 +1,18 @@
+.body{
+    display: flex;
+    width: 95%;
+    margin: 10px auto;
+    margin-top: 60px;
+}
+
+.leftbar{
+    flex: 0.25;
+}
+
+.middle{
+    flex: 0.5;
+}
+
+.rightbar{
+    flex: 0.25;
+}

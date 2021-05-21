@@ -6,34 +6,33 @@ import Event from "../UI/Icons/Event";
 import Article from "../UI/Icons/Article";
 import Post from "../UI/Icons/Post";
 
+const icons = [
+  {icon: <Post/>, name:'Photo' },
+  {icon: <Event/>, name:'Event' },
+  {icon: <Article/>, name:'Article' },
+  {icon: <Video/>, name:'Video' },
+]
+
 const Share = () => {
   return (
     <section>
       <Card>
-        <div className={classes.div}>
-          <h3> Share </h3>
-          <div className={classes.post}>
-            <div className={classes.avator}></div>
-            <input />
+        <div className={classes.post}>
+          <div className={classes.avatar__and__input}>
+            <div className={classes.avatar}></div>
+            <input  placeholder="Start a post"/>
           </div>
-          <div className={classes.elements}>
-            <div className={classes.element}>
-              <Post />
-              <p>Post</p>
-            </div>
-            <div className={classes.element}>
-              <Event />
-              <p>Event</p>
-            </div>
-            <div className={classes.element}>
-              <Video />
-              <p>Video</p>
-            </div>
-            <div className={classes.element}>
-              <Article />
-              <p>Article</p>
-            </div>
+
+          <div className={classes.post__icons}>
+          {
+            icons.map((icon,index)=>  <div className={classes.one__icon} >
+              <div style={{width:'60px'}}> {icon.icon} </div>
+              <p> {icon.name} </p>
+            </div>)
+          }
+          
           </div>
+
         </div>
       </Card>
     </section>

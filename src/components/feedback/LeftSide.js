@@ -4,7 +4,30 @@ import Camera from "../UI/Icons/camera";
 import Connection from "../UI/Icons/connection";
 import Add from "../UI/Icons/Add";
 
+const recentActivities = [
+  'Add post angular',
+  'Certificate HackRank',
+  'React Hooks',
+  'Node js for Rest API',
+  'Flutter UI tool kit'
+]
+
+
+const events = [
+  'Subscribe',
+  'Jobs',
+  'Innovation'
+]
+
+
+const groups = [
+  'Angular Developers',
+  'Mobile with Flutter',
+  'Walakulu'
+]
+
 const LeftSide = () => {
+
   return (
     <section>
       <Card>
@@ -13,39 +36,47 @@ const LeftSide = () => {
           <div className={classes.camera}>
             <Camera />
           </div>
-          <p> Welcome there!</p>
-          <p> Add Image </p>
+          <p> Thilina Dilshan</p>
+          <div className={classes.job}>
+            <div> Student at Institute Technplogy University of Moratuwa</div>
+          </div>
         </div>
       </Card>
 
       <Card>
-        <section className={classes.connection__section}>
-        
-          <div className={classes.connection}>
-            <p style={{flex:'1'}}> Connection </p>
-            <div style={{ width: "50px" }}>
-              <Connection />
-            </div>
-          </div>
-
-          <p> Grow your network </p>
-        </section>
+        <div className={classes.recent} >
+          <p style={{color:'blue'}}> Recent </p>
+          {
+            recentActivities.map((act, index)=>{
+              return <p style={{fontSize:'11px'}} key={index}> # {act}   </p>
+            })
+          }
+        </div>
       </Card>
 
       <Card>
-        <section className={classes.connection__section}>
-
-          <div className={classes.connection}>
-            <p style={{flex:'1'}}> Groups </p>
-            <div style={{ width: "50px" }}>
-              <Add />
-            </div>
-          </div>
-
-          <p> Events </p>
-          <p> HashTags </p>
-        </section>
+        <div className={classes.recent} >
+          <p style={{color:'blue'}}> Groups </p>
+          {
+            groups.map((act, index)=>{
+              return <p style={{fontSize:'11px'}} key={index}> # {act}   </p>
+            })
+          }
+        </div>
       </Card>
+
+      <Card>
+        <div className={classes.recent} >
+          <p style={{color:'blue'}}> Events </p>
+          {
+            events.map((act, index)=>{
+              return <p style={{fontSize:'11px'}} key={index}> # {act}   </p>
+            })
+          }
+        </div>
+      </Card>
+
+      
 
     </section>
   );

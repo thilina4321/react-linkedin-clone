@@ -1,63 +1,62 @@
-.div{
+.post{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
+    align-items: flex-start;
+    padding:  20px 5px;
+    width: 95%;
+    margin: 1px auto;
 }
 
-.div img{
-    height: 200px;
-    width: 100%;
-
-}
-
-.post{
+.avatar__and__input{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 90%;
-    margin: 10px auto;
-    
-
-}
-
-.avator{
-    height: 50px;
-    width: 60px;
-    background-color: black;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.post input{
     width: 100%;
-    height: 30px;
-    border-radius: 20px;
 }
 
-.elements{
+.avatar{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.avatar__and__input input{
+    flex: 1;
+    border-radius: 20px;
+    padding: 5px;
+    background-color:  #ebebeb;
+}
+
+.avatar__and__input input:focus{
+    outline: none;
+}
+
+
+
+/* // icoons */
+
+.post__icons{
+    margin-top: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    
+    
 }
 
-.element{
+.one__icon{
     display: flex;
-    height: 80px;
-    width: 80px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    color: blue;
-}
-
-.ele{
-    display: flex;
-    height: 60px;
+    height: 40px;
     width: 60px;
-    justify-content: center;
-    align-items: center;
-    color: blue;
+    color: green;
+
+}
+
+p{
+    margin: 0;
+    font-size: 12px;
 }
