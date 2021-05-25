@@ -4,6 +4,7 @@ import Main from "./Main";
 import RightLide from "./RightLide";
 
 import classes from "./Feedback.module.css";
+import Message from "../UI/elements/messages/Message";
 
 
 
@@ -26,6 +27,9 @@ const Feedback = () => {
           <RightLide />
         </div>
         
+      </div>
+      <div className={classes.message}>
+        <Message />
       </div>
     </div>
   );

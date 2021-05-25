@@ -30,7 +30,7 @@ img{
 
 .comment{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 95%;
     margin: 1px auto;
@@ -50,6 +50,7 @@ img{
     height: 30px;
     background-color: #ededed;
     border-radius: 10px;
+    align-self: center;
 }
 
 .comment input:focus{

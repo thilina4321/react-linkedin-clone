@@ -1,0 +1,16 @@
+.profile{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+.main{
+    grid-column: 2/8;
+    grid-row: 1/2;
+}
+
+.sidebar{
+    grid-column: 9/12;
+    grid: 1/2;
+}

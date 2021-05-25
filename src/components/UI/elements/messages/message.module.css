@@ -1,0 +1,54 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px;
+}
+
+.message{
+    display: flex;
+    padding: 5px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.avatar{
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+
+}
+
+p{
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle:hover{
+    background-color: #ededed;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+hr{
+    height: 3px;
+    width: 100%;
+}
+
+input{
+    background-color: #ededed;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+.my__message{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}

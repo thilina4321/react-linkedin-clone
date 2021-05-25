@@ -1,6 +1,6 @@
 .body{
     display: flex;
-    width: 95%;
+    width: 80%;
     margin: 10px auto;
     margin-top: 60px;
 }
@@ -15,4 +15,10 @@
 
 .rightbar{
     flex: 0.25;
+}
+
+.message{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
 }
