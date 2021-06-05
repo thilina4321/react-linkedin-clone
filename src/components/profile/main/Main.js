@@ -1,4 +1,5 @@
 import classes from "./Main.module.css";
+import ProfileStength from "./profile-strength/ProfileStength";
 
 const Main = () => {
   return (
@@ -22,6 +23,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <ProfileStength/>
     </div>
   );
 };
